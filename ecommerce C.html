@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/sample.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-evenly; align-items:left;
+            flex-direction: column;
+        }
+        div{
+            margin:10px;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 5%;
+            
+        }
+        image{
+               border-radius:50%;
+               height:2px;
+               width:1px;
+               border:2px solid black;
+               position:absolute;
+               left:30px;
+
+        }
+        h3{
+            display:inline-block;
+            left:40px;
+            align-items:right;
+        }
+        p{
+            align-items: right;
+            left:10px;
+        }
+        h5{
+            position:absolute;
+            right:20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div><img src="./ecommerce C_files/Lana.jpeg" alt="Lana" height="30px" width="30px"><h3>Lana Steiner</h3>
+        <p>"i'am absolutely in love with the cloths i bought from this multivendor app! The selection is fantastic  and i found some unique piece which i couldnt resist.The quality is top- notch
+            ,and the sizing was accurate,which is relief when shopping online.The prices are reasonable ,and delivery was quicker than expected,willdefinitely shop here again</p>
+            
+    </div>
+    
+    <div><img src="./ecommerce C_files/esil.jpeg" alt="Emilly" height="30px" width="30px"><h3>Emily</h3>
+   <p> "i recently ordered a dress from this platform,and i'am thrilled with my purchase! The dress fits like a glove and the quality is exceptional. i wore it to a special event and received so many compliments.Will definitely be shopping here again!"
+
+   </p></div>
+   
+   <div><img src="./ecommerce C_files/sophia.jpeg" alt="" height="30px" width="30px"><h3>Sophia</h3>
+       <p> "i'm not usually a fan of online shopping for cloths,but this app changed my mind.i bought a pair of jeans and a shirt,and both items were true to size and looked even better in person.The Delivery was prompt,and i appriciate the effort the selles put into accurate product descriptions."
+    </p></div>
+    <div><img src="./ecommerce C_files/Liam.jpg" alt="Liam" height="30px" width="30px"><h3>Liam</h3>
+    <p>"i'm impressed with the range of styles available on this app.I bought a couple of dresses for different occasions,and each one was a hit! The customer reviews were invaluable in helping</p></div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
